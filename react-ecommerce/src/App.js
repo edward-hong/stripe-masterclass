@@ -1,7 +1,12 @@
+import Header from './components/header/header'
 import './App.scss'
 
 function App() {
-	return <div className="App">React ecommerce</div>
+	return (
+		<div className="App">
+			<Header />
+		</div>
+	)
 }
 
 export default App
