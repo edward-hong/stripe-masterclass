@@ -1,11 +1,14 @@
+import { useNavigate } from 'react-router-dom'
+
 import './featured-product.styles.scss'
 
 const FeaturedProduct = product => {
-	const { title, imageUrl, price } = product
+	const navigate = useNavigate()
+	const { title, imageUrl, price, id } = product
 
 	return (
 		<div className="featured-product">
-			<div className="featured-image">
+			<div className="featured-image" onClick={() => navigate(`/product/${id}`)}>
 				<img src={imageUrl} alt="product" />
 			</div>
 			<div className="name-price">

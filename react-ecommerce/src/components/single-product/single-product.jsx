@@ -29,7 +29,7 @@ const SingleProduct = () => {
 
 	return (
 		<Layout>
-			<div className="single=-product-container">
+			<div className="single-product-container">
 				<div className="product-image">
 					<img src={imageUrl} alt="product" />
 				</div>
